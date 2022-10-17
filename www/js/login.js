@@ -16,7 +16,6 @@ function getLog(){
            })
         } else {
            console.log("ERREUR"); // si il n'y a pas de réponse possitive
-           //document.write("<h2> Test non reussi </h2>");
         }
       })
    }
