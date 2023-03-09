@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/login.css" type="text/css">
+        <title>DoliApp</title>
+    </head>
+    <body>
+        <div class="logo">
+            <h1 class="Logo-Primaire">DoliApp</h1>
+            <h1 class="Logo-Secondaire">App For Dolibarr</h1> <h1 class="Dot">.</h1>
+        </div>
+
+        <div class="Login-app">
+            <div class="Form-log">
+                <input id="Adresse_IP" type="text" placeholder="Adresse IP">
+                <input id="Login" type="text" placeholder="Login">
+                <input  id="Password" type="password" placeholder="Password">
+                <button class="log-button" onclick="getLog()"> Connexion </button>
+            </div>
+        </div>
+
+        <script src="cordova.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>
