@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="../css/createNDF.css" type="text/css" />
+    <title>Création de la note de frais | Doliapp</title>
+  </head>
+  <body>
+    <h1 class="Titre-Page">Note De frais</h1>
+
+    <div class="Note-De-Frais">
+      <div class="Titre-Note">
+        <label for="Nom-Note"> Nom De La Note : </label>
+        <input
+          name="description"
+          class="note"
+          id="Nom-Note"
+          type="text"
+          placeholder="Titre de la note"
+        />
+      </div>
+      <!-- onchange="encodeImageFileAsURL(this)" -->
+
+      <div class="Picture">
+        <h3>Preuve de la Note :</h3>
+        <label class="custom-file-upload"> Photo dans l'appareil:</label>
+        <input
+          class="inputfile"
+          type="file"
+          onchange="encodeImageFileAsURL(this)"
+        />
+        <h3>Ou :</h3>
+        <button class="button-photo" id="takepicture">Prendre une Photo</button>
+      </div>
+    </div>
+
+    <h1 class="Titre">Ligne de Frais</h1>
+    <div id="contain-LDF" class="contain-LDF">
+      <label class="note-label" for="description">Date</label>
+      <input type="date" />
+
+      <label class="note-label" for="description">Type de Note De Frais</label>
+      <select name="Type" id="TypeNDF">
+        <option value="0">--Veillez Choisir une options--</option>
+        <option value="1">Frais kilométriques</option>
+        <option value="2">Repas</option>
+        <option value="3">Transport</option>
+        <option value="4">Autre</option>
+      </select>
+
+      <label class="note-label" for="description"
+        >T.V.A: 0% | Quantité : 1</label
+      >
+      <label class="note-label" for="description"
+        >Prix<input type="text" />
+      </label>
+    </div>
+
+
+<div class="end">
+    <div class="Final-button">
+      <button class="buttonID" onclick="addL()">ajouter une ligne</button>
+    </div>
+
+    <div class="Final-button">
+      <button class="buttonID" onclick="getUserID()">
+        Créer la note de frais
+      </button>
+    </div>
+</div>
+    <script src="cordova.js"></script>
+    <script src="js/POST_expensereports.js"></script>
+    <script src="js/get_info.js"></script>
+    <script src="js/file.js"></script>
+  </body>
+</html>

@@ -10,7 +10,7 @@ function getLog(){
            Udata.then((response) => { // traduit la promesse en reponse
                tokenID = response['success']['token'] // Permet d'invidualiser le token
                //location.replace(`accueil.html`); // Redirige vers l'accueil
-               window.location="accueil.html";
+               window.location="Html/accueil.html";
                localStorage.setItem('token', tokenID);
                let IP = localStorage.setItem('Adresse_IP',Ip);
            })

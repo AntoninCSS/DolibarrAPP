@@ -55,7 +55,7 @@ const data = await fetch(url,{
     function onSucess(imageURI){
     //console.log(imageURI);
     localStorage.setItem("BASE64", imageURI);
-    localStorage.setItem("Nom_img", "Preuve.jpg");
+    localStorage.setItem("Nom_img", "Preuve.png");
     }
     function onFail(message) {
         alert('Failed because : ' + message);
