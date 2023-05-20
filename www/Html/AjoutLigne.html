@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout Ligne</title>
+</head>
+<body>
+    <h1 class="Titre">Ligne de Frais</h1>
+    <div id="contain-LDF" class="contain-LDF">
+      <label class="note-label" for="date">Date : </label>
+      <input name="date" id="date" type="date" >
+
+      <label class="note-label" for="Type">Type de Note De Frais : </label>
+      <select  name="Type" id="TypeNDF">
+        <option value="">--Veillez Choisir une options--</option>
+        <option value="1">Frais kilométriques</option>
+        <option value="2">Repas</option>
+        <option value="3">Transport</option>
+        <option value="4">Autre</option>
+      </select>
+
+      <label>T.V.A: 0% | Quantité : 1 | </label>
+      <label class="note-label" for="prix">  Prix : <input name="prix" id="Prix" type="number" >
+      </label>
+
+      <button class="Btn" onclick="AjoutLigne()">Ajouter la ligne</button>
+      <button class="Btn" onclick="Validation()"> Valider la selection</button>
+
+<div id="AfficheLigne" class="AfficheLigne">
+      <!-- Injecter par AjoutLigne.js -->
+</div>
+
+    </div>
+    
+</body>
+<script  src="../js/AjoutLigne.js"></script>
+</html>
