@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"/>
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="../css/createNDF.css" type="text/css" />
+    <title>Création de la note de frais | Doliapp</title>
+  </head>
+  <body>
+
+    <h1 class="Titre-Page">Note De frais</h1>
+
+    <div class="Note-De-Frais">
+      <div class="Titre-Note">
+        <label for="Nom-Note"> Nom De La Note : </label>
+        <input name="description" class="note" id="Nom-Note" type="text" placeholder="Titre de la note"/>
+      </div>
+      <!-- onchange="encodeImageFileAsURL(this)" -->
+
+      <div class="Picture">
+        <h3>Preuve de la Note :</h3>
+        <label class="custom-file-upload"> Photo dans l'appareil:</label>
+        <input class="inputfile" type="file" onchange="encodeImageFileAsURL(this)"/>
+        <h3>Ou:</h3>
+        <button class="button-photo" id="takepicture">Prendre une Photo</button>
+      </div>
+    </div>
+
+
+
+<div class="end">
+    <div class="Final-button">
+      <button class="buttonID" onclick="document.location.href='AjoutLigne.html'">ajouter une ligne</button>
+    </div>
+
+    <div class="Final-button">
+      <button class="buttonID" onclick="getUserID()">
+        Créer la note de frais
+      </button>
+    </div>
+</div>
+    <script src="cordova.js"></script>
+    <script src="../js/POST_expensereports.js"></script>
+    <script src="../js/get_info.js"></script>
+    <script src="../js/file.js"></script>
+  </body>
+</html>

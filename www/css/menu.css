@@ -1,0 +1,30 @@
+body{
+    background-color: #070417;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100vh;   
+    font-family: 'Roboto', sans-serif;
+}
+
+.app-Menu button{
+    border: none ;
+    background:    #1b143f;
+    border-radius: 14px;
+    padding:       20px 60px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 1em/1 "Ubuntu", sans-serif;
+    text-align:    center;
+    position: relative;
+    top: 2em;
+    cursor: pointer;
+}
+
+.app-Menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+}

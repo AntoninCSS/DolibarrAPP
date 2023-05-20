@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modification de note de frais</title>
+    <link rel="stylesheet" href="../css/modification.css" type="text/css" />
+  </head>
+  <body>
+    <label class="note-label" for="NDF">
+      Id de la note de frais a modifier :
+      <input name="NDF" id="IDNDF" type="number"
+    /></label>
+    <button id="FetchNDF" onclick="getNDF()">Rechercher</button>
+
+    <div class="InfoG" id="InfoG">
+      <!-- Injecter pas Modification.js -->
+    </div>
+
+    <div class="InfoL" id="InfoL">
+      <!-- Injecter pas Modification.js -->
+    </div>
+
+    <div class="Lignes" id="LignesAFF">
+      <!-- Injecter pas Modification.js -->
+    </div>
+  </body>
+
+  <script src="../js/Modification.js"></script>
+</html>

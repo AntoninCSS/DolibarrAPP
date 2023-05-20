@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+:root {
+  --ColorB: #292639;
+  --ColorA: #1b143f;
+  --ColorC : #070417;
+}
+
+
+body {
+  background-color: #070417;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2em;
+  font-family: "Roboto", sans-serif;
+}
+
+.Titre-Page{
+  color: white;
+  position:absolute;
+  top: 1em;
+}
+
+.Note-De-Frais{
+  background-color: var(--ColorB);
+  padding: 2em;
+  position: relative;
+  top: 6em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.7em;
+}
+
+label {
+  display: block;
+  text-align:start;
+  margin-bottom: 2px; /* Ajouter une marge entre le label et l'input */
+}
+
+input{
+  background-color: #070417;
+  display: block;
+  padding: 0.7em;
+  width: 20em;
+  border-radius: 0.7em;
+  color: white;
+}
+
+.Picture{
+  padding-top: 1em;
+}
+
+.Picture h3{
+  padding-top: 10px;
+  padding-bottom:10px ;
+  text-align: center;
+}
+
+
+.button-photo{
+  background-color: #070417;
+  display: block;
+  padding: 0.7em;
+  width: 20em;
+  border-radius: 0.7em;
+  color: white;
+  cursor: pointer;
+}
+
+
+.Titre {
+  color: white;
+  position:relative;
+  bottom: -3em;
+}
+
+
+
+.contain-LDF{
+  background-color: var(--ColorB);
+  padding: 2em;
+  position: relative;
+  top: 6em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.7em;
+}
+
+.contain-LDF label{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+
+
+.end{
+  margin-top: 8em;
+  margin-bottom: 3em;
+}
+
+.Final-button{
+  margin-bottom: 2em;
+  
+}
+
+.buttonID {
+
+  border: none ;
+  background:    #1b143f;
+  border-radius: 14px;
+  padding:       20px 60px;
+  color:         #ffffff;
+  display:       inline-block;
+  font:          normal bold 1em/1 "Ubuntu", sans-serif;
+  text-align:    center;
+  position: relative;
+  top: 2em;
+  cursor: pointer;
+}
